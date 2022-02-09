@@ -11,7 +11,7 @@ import fr.Akkuun.com.example.plantemanaging.fragments.HomeFragments
 
         //injecter le fragment dans notre boite
         val transaction=supportFragmentManager.beginTransaction()
-        transaction.replace(R.id.fragment_container,HomeFragments())
+        transaction.replace(R.id.fragment_container,HomeFragments(this))
         transaction.addToBackStack(null)
         transaction.commit()
     }

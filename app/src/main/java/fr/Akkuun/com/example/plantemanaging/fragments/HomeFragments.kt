@@ -6,12 +6,15 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.RecyclerView
+import fr.Akkuun.com.example.plantemanaging.MainActivity
 import fr.Akkuun.com.example.plantemanaging.PlantModel
 import fr.Akkuun.com.example.plantemanaging.R
 import fr.Akkuun.com.example.plantemanaging.manager.PlantAdapter
 import fr.Akkuun.com.example.plantemanaging.manager.PlantItemDecoration
 
-class HomeFragments :Fragment() {
+class HomeFragments(
+    private val context : MainActivity
+) :Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
@@ -28,7 +31,7 @@ class HomeFragments :Fragment() {
         PlanteListe.add(PlantModel(
             "Pissenlit",
             "jaune soleil",
-             "https://pixabay.com/fr/photos/pissenlit-des-graines-2266558/",
+             "https://www.google.com/imgres?imgurl=https%3A%2F%2Fwww.gammvert.fr%2Fconseils%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Fmain_image%2Fpublic%2F2019-09%2FFotolia_73611326_L-resize.jpg%3Fitok%3DrfOdC4KL&imgrefurl=https%3A%2F%2Fwww.gammvert.fr%2Fconseils%2Fconseils-de-jardinage%2Fentretien-des-tulipes&tbnid=t9u9jOLT_5kWHM&vet=12ahUKEwjmnJ2u5PP1AhVRuqQKHdzHDIwQMygFegUIARC5Ag..i&docid=VMnJ6iEg3gZjBM&w=910&h=581&q=tulipe&ved=2ahUKEwjmnJ2u5PP1AhVRuqQKHdzHDIwQMygFegUIARC5Ag",
             false
         ))
         //enregistrer deuxieme plante
@@ -56,14 +59,14 @@ class HomeFragments :Fragment() {
 
         //recuper le recycle view
 val horizontalRecycleView=view.findViewById<RecyclerView>(R.id.horizontal_recycle_View)
-        horizontalRecycleView.adapter=PlantAdapter(PlanteListe,R.layout.item_horizontal_plant)
+        horizontalRecycleView.adapter=PlantAdapter(context ,PlanteListe,R.layout.item_horizontal_plant)
 
 
 
         //recuperer le deuxieme recycle view
 
          val verticalRecycleView=view.findViewById<RecyclerView>(R.id.vertical_recycle_View)
-        verticalRecycleView.adapter=PlantAdapter(PlanteListe, R.layout.item_vertical_plant)
+        verticalRecycleView.adapter=PlantAdapter(context,PlanteListe, R.layout.item_vertical_plant)
         verticalRecycleView.addItemDecoration(PlantItemDecoration())
 
         return view
