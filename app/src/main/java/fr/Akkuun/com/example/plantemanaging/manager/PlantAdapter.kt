@@ -7,7 +7,7 @@ import android.widget.ImageView
 import androidx.recyclerview.widget.RecyclerView
 import fr.Akkuun.com.example.plantemanaging.R
 
-class PlantAdapter :RecyclerView.Adapter<PlantAdapter.ViewHolder>(){
+class PlantAdapter(private val layoutId:Int) :RecyclerView.Adapter<PlantAdapter.ViewHolder>(){
     //boite pour ranger tout les composants à controler
 
     class ViewHolder(view:View):RecyclerView.ViewHolder(view){
@@ -18,7 +18,7 @@ val planteImage=view.findViewById<ImageView>(R.id.image_item)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
-val view = LayoutInflater.from(parent.context).inflate(R.layout.item_horizontal_plant,parent,false)
+val view = LayoutInflater.from(parent.context).inflate(layoutId ,parent,false)
 
     return ViewHolder(view)
     }
