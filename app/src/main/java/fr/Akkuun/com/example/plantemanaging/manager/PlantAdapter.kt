@@ -5,9 +5,12 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import androidx.recyclerview.widget.RecyclerView
+import fr.Akkuun.com.example.plantemanaging.PlantModel
 import fr.Akkuun.com.example.plantemanaging.R
 
-class PlantAdapter(private val layoutId:Int) :RecyclerView.Adapter<PlantAdapter.ViewHolder>(){
+class PlantAdapter(
+    private val plantelist:List<PlantModel>,
+    private val layoutId:Int) :RecyclerView.Adapter<PlantAdapter.ViewHolder>(){
     //boite pour ranger tout les composants à controler
 
     class ViewHolder(view:View):RecyclerView.ViewHolder(view){
@@ -24,10 +27,14 @@ val view = LayoutInflater.from(parent.context).inflate(layoutId ,parent,false)
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
+//recuprer le info de la plante
+
+        val currentplant=plantelist[position]
+
 
     }
 
     override fun getItemCount(): Int {
-        return  5
+        return  plantelist.size
     }
 }
