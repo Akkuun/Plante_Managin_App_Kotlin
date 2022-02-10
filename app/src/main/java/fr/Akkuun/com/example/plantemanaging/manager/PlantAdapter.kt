@@ -22,9 +22,9 @@ class PlantAdapter(
     class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         //image de la plante
         val planteImage = view.findViewById<ImageView>(R.id.image_item)
-        val nomPlante :TextView?= view.findViewById(R.id.name_item)
-        val DescriptionPlante : TextView?= view.findViewById(R.id.description_item)
-
+        val nomPlante: TextView? = view.findViewById(R.id.name_item)
+        val DescriptionPlante: TextView? = view.findViewById(R.id.description_item)
+        val starIcon = view.findViewById<ImageView>(R.id.star_icon)
 
     }
 
@@ -44,14 +44,19 @@ class PlantAdapter(
 
         //mettre à jour le nom de la plante
 
-        holder.nomPlante?.text=currentplant.name
+        holder.nomPlante?.text = currentplant.name
 
 
         //mettre à jour la description de la plante
 
-        holder.DescriptionPlante?.text=currentplant.desription
+        holder.DescriptionPlante?.text = currentplant.desription
 
-
+//verifier si la plante a ete like
+        if (currentplant.liked) {
+            holder.starIcon.setImageResource(R.drawable.ic_star)
+        } else {
+            holder.starIcon.setImageResource(R.drawable.ic_unstar)
+        }
     }
 
     override fun getItemCount(): Int = plantelist.size
