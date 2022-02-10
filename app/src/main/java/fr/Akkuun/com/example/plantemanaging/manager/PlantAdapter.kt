@@ -14,7 +14,8 @@ import fr.Akkuun.com.example.plantemanaging.R
 class PlantAdapter(
     private val context: MainActivity,
     private val plantelist:List<PlantModel>,
-    private val layoutId:Int) :RecyclerView.Adapter<PlantAdapter.ViewHolder>(){
+    private val layoutId:Int
+     ) :RecyclerView.Adapter<PlantAdapter.ViewHolder>(){
     //boite pour ranger tout les composants à controler
 
     class ViewHolder(view:View):RecyclerView.ViewHolder(view){
@@ -34,9 +35,10 @@ val view = LayoutInflater.from(parent.context).inflate(layoutId ,parent,false)
 //recuprer le info de la plante
 
         val currentplant=plantelist[position]
-
-//utiliser glide pour recuperer l'image à partir de son lien--> composant
         Glide.with(context).load(Uri.parse(currentplant.imageUrl)).into(holder.planteImage)
+
+        //utiliser glide pour recuperer l'image à partir de son lien--> composant
+
     }
 
     override fun getItemCount(): Int=plantelist.size

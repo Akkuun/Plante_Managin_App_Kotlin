@@ -31,29 +31,23 @@ class HomeFragments(
         PlanteListe.add(PlantModel(
             "Pissenlit",
             "jaune soleil",
-             "https://www.google.com/imgres?imgurl=https%3A%2F%2Fwww.gammvert.fr%2Fconseils%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Fmain_image%2Fpublic%2F2019-09%2FFotolia_73611326_L-resize.jpg%3Fitok%3DrfOdC4KL&imgrefurl=https%3A%2F%2Fwww.gammvert.fr%2Fconseils%2Fconseils-de-jardinage%2Fentretien-des-tulipes&tbnid=t9u9jOLT_5kWHM&vet=12ahUKEwjmnJ2u5PP1AhVRuqQKHdzHDIwQMygFegUIARC5Ag..i&docid=VMnJ6iEg3gZjBM&w=910&h=581&q=tulipe&ved=2ahUKEwjmnJ2u5PP1AhVRuqQKHdzHDIwQMygFegUIARC5Ag",
-            false
-        ))
+             "https://cdn.pixabay.com/photo/2014/09/27/17/35/dandelion-463928_1280.jpg" ))
         //enregistrer deuxieme plante
         PlanteListe.add(PlantModel(
             "Banboo",
             "Originaire d'Asie",
-            "https://pixabay.com/link/?ua=t%3Devent%26ec%3Dapi_ad%26ea%3Dnavigate%26el%3Dgetty%26v%3D1%26tid%3DUA-20223345-1&next=https%3A%2F%2Fwww.istockphoto.com%2Fphoto%2Fbonsai-bambootree-in-a-green-glazed-square-vertical-pot-gm470979432-62511994%3Futm_source%3Dpixabay%26utm_medium%3Daffiliate%26utm_campaign%3DSRP_image_sponsored%26utm_content%3Dhttp%253A%252F%252Fpixabay.com%252Ffr%252Fimages%252Fsearch%252Fbanboo%252F%26utm_term%3Dbanboo&hash=eac50b199c2c892e9e4136b8b77442fb205b2c0f/",
-            false
-        ))
+            "https://cdn.pixabay.com/photo/2020/04/04/13/34/banboo-5002308_1280.jpg"))
 //enregistrer troiseieme plante
         PlanteListe.add(PlantModel(
             "Rose",
             "Plante à épines",
-            "https://pixabay.com/photos/rose-flower-love-romance-beautiful-729509/",
-            false
+            "https://cdn.pixabay.com/photo/2015/04/19/08/32/rose-729509_1280.jpg",false
         ))
         //enregistrer quatrieme plante
         PlanteListe.add(PlantModel(
             "Cactus",
             "Plante du désert",
-            "https://pixabay.com/fr/photos/cactus-arrosoir-plante-d-appartement-4161380/",
-            false
+            "https://cdn.pixabay.com/photo/2019/04/27/21/56/cactus-4161380_1280.jpg",false
         ))
 
 
