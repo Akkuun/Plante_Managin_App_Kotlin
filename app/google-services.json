@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "253836471242",
+    "project_id": "plantemanaging",
+    "storage_bucket": "plantemanaging.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:253836471242:android:0a05e45417c0fa55c7bd33",
+        "android_client_info": {
+          "package_name": "fr.Akkuun.com.example.plantemanaging"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "253836471242-fsit9elbfp0j5baqdhknqpj0qvt977cm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCNBPTnBt33LMRVcmWJvEoGp1TdnFp7R0M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "253836471242-fsit9elbfp0j5baqdhknqpj0qvt977cm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

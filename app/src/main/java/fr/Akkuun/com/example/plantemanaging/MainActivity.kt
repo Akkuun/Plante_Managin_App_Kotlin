@@ -9,11 +9,21 @@ import fr.Akkuun.com.example.plantemanaging.fragments.HomeFragments
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        //injecter le fragment dans notre boite
-        val transaction=supportFragmentManager.beginTransaction()
-        transaction.replace(R.id.fragment_container,HomeFragments(this))
-        transaction.addToBackStack(null)
-        transaction.commit()
+        //charger notre plante Repository
+        val repo=PlantRepository()
+
+
+        //mettre à jour  la liste  de plantes
+
+        repo.updateData{
+            //injecter le fragment dans notre boite
+            val transaction=supportFragmentManager.beginTransaction()
+            transaction.replace(R.id.fragment_container,HomeFragments(this))
+            transaction.addToBackStack(null)
+            transaction.commit()
+        }
+
+
     }
 
 }
