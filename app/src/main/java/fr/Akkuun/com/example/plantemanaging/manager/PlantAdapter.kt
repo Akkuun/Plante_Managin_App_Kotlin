@@ -10,6 +10,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import fr.Akkuun.com.example.plantemanaging.MainActivity
 import fr.Akkuun.com.example.plantemanaging.PlantModel
+import fr.Akkuun.com.example.plantemanaging.PlantRepository
 import fr.Akkuun.com.example.plantemanaging.R
 
 class PlantAdapter(
@@ -39,6 +40,11 @@ class PlantAdapter(
 
         val currentplant = plantelist[position]
 
+        //recuerer le repository
+
+        val repo = PlantRepository()
+
+
         //utiliser glide pour recuperer l'image à partir de son lien--> composant
         Glide.with(context).load(Uri.parse(currentplant.imageUrl)).into(holder.planteImage)
 
@@ -56,7 +62,22 @@ class PlantAdapter(
             holder.starIcon.setImageResource(R.drawable.ic_star)
         } else {
             holder.starIcon.setImageResource(R.drawable.ic_unstar)
+
         }
+
+//rajouter une interaction sur cette étoile
+
+        holder.starIcon.setOnClickListener {
+            //inverser l'état du bouton
+
+            currentplant.liked = !currentplant.liked
+//mettre à jour l'objet en question
+
+            repo.updatePlant(currentplant)
+
+        }
+
+
     }
 
     override fun getItemCount(): Int = plantelist.size

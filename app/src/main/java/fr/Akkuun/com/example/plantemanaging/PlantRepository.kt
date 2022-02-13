@@ -12,17 +12,17 @@ class PlantRepository {
     object Singleton {
 
         //se connecter a la reference plante
-       val databaseRef = FirebaseDatabase.getInstance().getReference("Plants")
+        val databaseRef = FirebaseDatabase.getInstance().getReference("Plants")
         //créer une liste contenant nos plantes
 
         val plantList = arrayListOf<PlantModel>()
     }
 
 
-    fun updateData(callback:  ()-> Unit)  {
+    fun updateData(callback: () -> Unit) {
         //absorber les donnes  depuis la dataRef  -> liste de plantes
 
-        databaseRef.addValueEventListener(object : ValueEventListener{
+        databaseRef.addValueEventListener(object : ValueEventListener {
             override fun onDataChange(p0: DataSnapshot) {
                 //retirer les anciennes
                 plantList.clear()
@@ -30,16 +30,16 @@ class PlantRepository {
 
                 //recolter la liste
 
-                for (ds in p0.children){
+                for (ds in p0.children) {
                     //construire un obejt plante
 
-                    val Plant=ds.getValue(PlantModel::class.java)
+                    val Plant = ds.getValue(PlantModel::class.java)
 
                     //verifier que la plante n'est pas null
 
-                     if (Plant!=null){
-                         plantList.add(Plant)
-                     }
+                    if (Plant != null) {
+                        plantList.add(Plant)
+                    }
                 }
                 //actionner le callback
                 callback()
@@ -52,4 +52,8 @@ class PlantRepository {
 
         })
     }
+
+    //mettre un jour un objet en base de donnee
+    fun updatePlant(plant: PlantModel) = databaseRef.child(plant.id).setValue(plant)
+
 }
