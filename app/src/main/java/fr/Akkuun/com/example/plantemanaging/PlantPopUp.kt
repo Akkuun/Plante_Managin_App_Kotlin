@@ -19,6 +19,26 @@ class PlantPopUp(
         requestWindowFeature(Window.FEATURE_NO_TITLE)
         setContentView(R.layout.popup_plants_details)
         setupComponents()
+        setUpclosebutton()
+        setUpDeleteButton()
+    }
+
+    private fun setUpDeleteButton() {
+        findViewById<ImageView>(R.id.delete_button).setOnClickListener{
+
+val repo=PlantRepository()
+            repo.deletePlant(currentPlant)
+            dismiss()
+        }
+    }
+
+
+
+    private fun setUpclosebutton() {
+        findViewById<ImageView>(R.id.close_button).setOnClickListener{
+
+            dismiss()
+        }
     }
 
     private fun setupComponents() {
