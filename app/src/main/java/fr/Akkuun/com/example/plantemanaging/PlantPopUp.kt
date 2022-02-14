@@ -33,7 +33,13 @@ class PlantPopUp(
         //actualiser la description de la plante
         findViewById<TextView>(R.id.popup_plant_description_subtitle).text = currentPlant.desription
 
-        //actualiser
+        //actualiser la croissance de la plante
+
+        findViewById<TextView>(R.id.popup_plant_grow_description_subtitle).text=currentPlant.grow
+
+        //actualiser la conso
+
+        findViewById<TextView>(R.id.popup_plant_water_description_subtitle).text=currentPlant.water
 
 
 
