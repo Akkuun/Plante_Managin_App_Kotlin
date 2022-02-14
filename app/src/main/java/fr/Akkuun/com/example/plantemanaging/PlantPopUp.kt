@@ -21,21 +21,44 @@ class PlantPopUp(
         setupComponents()
         setUpclosebutton()
         setUpDeleteButton()
+        setUpStarButton()
+    }
+
+    private fun updateStar(button: ImageView) {
+        if (currentPlant.liked) {
+            button.setImageResource(R.drawable.ic_star)
+        } else {
+            button.setImageResource(R.drawable.ic_unstar)
+        }
+    }
+
+    private fun setUpStarButton() {
+        val starButton = findViewById<ImageView>(R.id.star_button)
+        updateStar(starButton)
+
+
+
+        starButton.setOnClickListener {
+
+            currentPlant.liked = !currentPlant.liked
+            val repo = PlantRepository()
+            repo.updatePlant(currentPlant)
+            updateStar(starButton)
+        }
     }
 
     private fun setUpDeleteButton() {
-        findViewById<ImageView>(R.id.delete_button).setOnClickListener{
+        findViewById<ImageView>(R.id.delete_button).setOnClickListener {
 
-val repo=PlantRepository()
+            val repo = PlantRepository()
             repo.deletePlant(currentPlant)
             dismiss()
         }
     }
 
 
-
     private fun setUpclosebutton() {
-        findViewById<ImageView>(R.id.close_button).setOnClickListener{
+        findViewById<ImageView>(R.id.close_button).setOnClickListener {
 
             dismiss()
         }
@@ -55,13 +78,12 @@ val repo=PlantRepository()
 
         //actualiser la croissance de la plante
 
-        findViewById<TextView>(R.id.popup_plant_grow_description_subtitle).text=currentPlant.grow
+        findViewById<TextView>(R.id.popup_plant_grow_description_subtitle).text = currentPlant.grow
 
         //actualiser la conso
 
-        findViewById<TextView>(R.id.popup_plant_water_description_subtitle).text=currentPlant.water
-
-
+        findViewById<TextView>(R.id.popup_plant_water_description_subtitle).text =
+            currentPlant.water
 
 
     }
