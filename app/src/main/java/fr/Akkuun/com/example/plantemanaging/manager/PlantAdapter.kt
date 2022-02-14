@@ -8,13 +8,10 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
-import fr.Akkuun.com.example.plantemanaging.MainActivity
-import fr.Akkuun.com.example.plantemanaging.PlantModel
-import fr.Akkuun.com.example.plantemanaging.PlantRepository
-import fr.Akkuun.com.example.plantemanaging.R
+import fr.Akkuun.com.example.plantemanaging.*
 
 class PlantAdapter(
-    private val context: MainActivity,
+    val context: MainActivity,
     private val plantelist: List<PlantModel>,
     private val layoutId: Int
 ) : RecyclerView.Adapter<PlantAdapter.ViewHolder>() {
@@ -76,7 +73,13 @@ class PlantAdapter(
             repo.updatePlant(currentplant)
 
         }
+//interaction lors du clic sur une plante
+        holder.itemView.setOnClickListener{
 
+            //afficher la popup
+
+            PlantPopUp(this,currentplant).show()
+        }
 
     }
 

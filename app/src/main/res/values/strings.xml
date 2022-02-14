@@ -39,7 +39,9 @@
     <string name="popup_plant_description">Description</string>
     <string name="popup_plant_description_subtitle">Petite description</string>
     <string name="popup_plant_grow_description">Description</string>
-    <string name="popup_plant_grow_description_subtitle">Petite description</string>
+    <string name="popup_plant_grow_title">Croissance</string>
+    <string name="popup_plant_water_title">Consommation d eau</string>
+    <string name="popup_plant_grow_description_subtitle">Lente</string>
     <string name="popup_plant_water_description">Description</string>
     <string name="popup_plant_water_description_subtitle">Petite description</string>
 
