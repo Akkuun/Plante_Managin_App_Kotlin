@@ -1,7 +1,78 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-             android:orientation="vertical"
-             android:layout_width="match_parent"
-             android:layout_height="match_parent">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/default_margin"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/uploadButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/green"
+            android:padding="@dimen/default_margin"
+            android:text="@string/plante_add_page_upload_button"
+            android:textColor="@color/white" />
+
+        <ImageView
+            android:id="@+id/preview_image"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/plant1" />
+
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/name_input"
+        style="@style/DefaultTextStyle"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="@dimen/default_margin"
+        android:hint="@string/plante_add_page_name_input"
+        android:paddingLeft="@dimen/default_margin" />
+
+    <EditText
+        android:id="@+id/description_input"
+        style="@style/DefaultTextStyle"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="@dimen/default_margin"
+        android:hint="@string/plante_add_page_desciption_input"
+        android:paddingLeft="@dimen/default_margin" />
+
+
+    <Spinner
+        android:id="@+id/grow_spinner"
+        style="@style/DefaultTextStyle"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:entries="@array/add_plante_page_grow_spinner_input"
+        android:paddingLeft="@dimen/default_margin" />
+
+    <Spinner
+        android:paddingTop="@dimen/default_margin"
+        android:id="@+id/water_spinner"
+        style="@style/DefaultTextStyle"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:entries="@array/add_plante_page_water_spinner_input"
+        android:paddingLeft="@dimen/default_margin" />
+
+
+    <Button
+        android:id="@+id/confirme_button"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="@dimen/default_margin"
+        android:background="@color/cardview_dark_background"
+        android:text="@string/add_plante_page_confirm_button"
+        android:textColor="@color/white"
+        android:textSize="24dp" />
 
 </LinearLayout>

@@ -28,7 +28,7 @@ class HomeFragments(
 
         //recuper le recycle view
 val horizontalRecycleView=view.findViewById<RecyclerView>(R.id.horizontal_recycle_View)
-        horizontalRecycleView.adapter=PlantAdapter(context , plantList,R.layout.item_horizontal_plant)
+        horizontalRecycleView.adapter=PlantAdapter(context , plantList.filter { !it.liked },R.layout.item_horizontal_plant)
 
 
 

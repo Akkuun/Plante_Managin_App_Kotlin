@@ -1,6 +1,15 @@
 <resources>
     <string name="app_name">Plantes News</string>
 
+    <string name="botton_home_item"> Acceuil</string>
+
+    <string name="botton_collection_item"> Collection</string>
+
+
+
+    <string name="botton_add_plant_item">Ajouter</string>
+
+
 
     <!-- Page d'accueil -->
     <string name="home_page_title">A découvrir</string>

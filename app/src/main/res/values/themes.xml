@@ -12,6 +12,11 @@
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
+
+        <item name="android:spinnerItemStyle">@style/DefaultTextStyle </item>
+        <item name="spinnerDropDownItemStyle">@style/DefaultTextStyle</item>
+
+
     </style>
 
     <!--composant titre par defaut -->
@@ -38,4 +43,9 @@
 
     </style>
 
+
+    <style name="BottomNaviationbar" parent="Widget.Design.BottomNavigationView">
+        <item name="android:textSize">18sp</item>
+        <item name="android:fontFamily">sans-serif </item>
+    </style>
 </resources>
