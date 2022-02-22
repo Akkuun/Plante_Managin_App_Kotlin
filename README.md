@@ -25,6 +25,6 @@ fenêtre pop-up qui apparaît lorsque que l'utilsateur clique sur une plante.
 
 -Toutes les informations (photos, description, like ect..) sont stockés sur une base données FireBase et toutes les informations inséréer par l'utilisateur sont aujouté dynamiquement à la base de données
 
-<a href="url"><img src="" align="center" height="500" width="250" ></a>
+<a href="url"><img src="https://user-images.githubusercontent.com/90316879/155211823-15a43e34-76f3-429c-967e-f8f1bfa7ae54.png" align="center" height="500" width="750" ></a>
 
-<a href="url"><img src="" align="center" height="500" width="250" ></a>
+<a href="url"><img src="" align="center" height="500" width="700" ></a>
