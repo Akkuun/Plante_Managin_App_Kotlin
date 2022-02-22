@@ -21,7 +21,10 @@ fenêtre pop-up qui apparaît lorsque que l'utilsateur clique sur une plante.
 
 -L'utilisateur peut insérer ses propres photos avec ses informations dans l'application
 
+<a href="url"><img src="https://user-images.githubusercontent.com/90316879/155211587-c4b33152-7ccb-495a-b89d-d3de099d8fc0.jpg" align="center" height="500" width="250" ></a>
 
 -Toutes les informations (photos, description, like ect..) sont stockés sur une base données FireBase et toutes les informations inséréer par l'utilisateur sont aujouté dynamiquement à la base de données
 
+<a href="url"><img src="" align="center" height="500" width="250" ></a>
 
+<a href="url"><img src="" align="center" height="500" width="250" ></a>
