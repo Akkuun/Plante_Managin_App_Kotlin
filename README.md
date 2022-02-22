@@ -28,3 +28,7 @@ fenêtre pop-up qui apparaît lorsque que l'utilsateur clique sur une plante.
 <a href="url"><img src="https://user-images.githubusercontent.com/90316879/155211823-15a43e34-76f3-429c-967e-f8f1bfa7ae54.png" align="center" height="400" width="750" ></a>
 
 <a href="url"><img src="https://user-images.githubusercontent.com/90316879/155212251-37321a39-2bed-412e-a2e6-7ed32579f41e.png" align="center" height="400" width="750" ></a>
+
+Voici une courte vidéo de présentation de l'application dans son ensemble
+<a href="url"><img src="https://user-images.githubusercontent.com/90316879/155222611-b487c2a9-e7f8-448e-853d-71b09bc349e6.gif" align="center" height="400" width="750" ></a>
+
