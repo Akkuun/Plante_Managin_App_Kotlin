@@ -17,6 +17,8 @@ fenêtre pop-up qui apparaît lorsque que l'utilsateur clique sur une plante
 
 -Chaque image liké sera dans la deuxième page de bibliothèque et chaque plante qui ne sera plus liké sera enlevé de la bibliothèque via une organisation dynamique de la base de données des plantes
 
+-Chaque Image peut etre cliqué afin de visualiser toutes ses informations et offre la posibilité à l'utilisateur de like ou supprimer la plante en question (ce qui la supprimera de la base de données)
+
 <a href="url"><img src="https://user-images.githubusercontent.com/90316879/155210099-eb142cc4-91ab-422f-b727-8f2164ce4257.jpg" align="center" height="500" width="250" ></a>
 
 -L'utilisateur peut insérer ses propres photos avec ses informations dans l'application depuis sa propre galerie
