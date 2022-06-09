@@ -5,7 +5,7 @@ Ce projet personnel est la réalisation d'une application mobile codé en Kotlin
 Voici les fonctionnalité présentent sur l'application  :
 
 -Sur la première page, l'utilisateur peut voir différentes plantes et ses informations (consommations d'eau, vitesse de croissante, nom, description) dans une
-fenêtre pop-up qui apparaît lorsque que l'utilsateur clique sur une plante
+fenêtre pop-up qui apparaît lorsque que l'utilsateur clique sur une plante. L'utilisateur peut aussi aimer cette plante ou la supprimer (ce qui la supprimera également de la base de données)
 
 
 <a href="url"><img src="https://user-images.githubusercontent.com/90316879/155197779-46c7c907-cd51-4d2e-8917-30e5221710d1.jpg" align="center" height="500" width="250" ></a>
@@ -17,7 +17,7 @@ fenêtre pop-up qui apparaît lorsque que l'utilsateur clique sur une plante
 
 -Chaque image liké sera dans la deuxième page de bibliothèque et chaque plante qui ne sera plus liké sera enlevé de la bibliothèque via une organisation dynamique de la base de données des plantes
 
--Chaque Image peut etre cliqué afin de visualiser toutes ses informations et offre la posibilité à l'utilisateur de like ou supprimer la plante en question (ce qui la supprimera de la base de données)
+
 
 <a href="url"><img src="https://user-images.githubusercontent.com/90316879/155210099-eb142cc4-91ab-422f-b727-8f2164ce4257.jpg" align="center" height="500" width="250" ></a>
 
